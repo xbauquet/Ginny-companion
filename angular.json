@@ -32,7 +32,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "src/app.js",
+                "inject": false
+              }
+            ]
           },
           "configurations": {
             "production": {
