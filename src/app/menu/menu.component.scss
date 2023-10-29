@@ -1,0 +1,53 @@
+.content {
+  width: 100%;
+  font-size: 0.8em;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.row {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background-color: #5d5d5d;
+    color: white;
+
+    .time-ago, a {
+      color: white;
+    }
+  }
+}
+
+.time-ago {
+  color: #C3C3C3;
+}
+
+.row-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.divider {
+  border-bottom: 1px solid #3d3d3d;
+  margin: 10px 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.refresh-time-ago {
+  text-align: right;
+  color: #C3C3C3;
+  padding: 8px;
+}

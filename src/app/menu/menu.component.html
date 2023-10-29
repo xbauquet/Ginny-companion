@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="row" *ngFor="let d of runs" (click)="openUrl(d.url)" style="flex: 1">
+    <div style="display: flex; align-items: center;">
+      <img [src]="d.icon" class="row-icon" alt="">
+      <div>{{ d.ownerName }} - {{ d.workflowName }}</div>
+    </div>
+    <div class="time-ago">{{ d.createdAt | timeAgo }}</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="row">
+    <a href="https://ginny-ci.com">Website</a>
+  </div>
+  <div (click)="toggleCompanion()" class="row">{{ isCompanionVisible() ? "Hide companion" : "Show companion" }}</div>
+  <div (click)="closeApp()" class="row">Quit ginny companion</div>
+  <div class="refresh-time-ago">updated {{ lastUpdate | timeAgo }}</div>
+</div>
